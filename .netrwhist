@@ -1,8 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/lucas/.vim'
 let g:netrw_dirhist_2='/home/lucas/lucas@eatme.tw'
 let g:netrw_dirhist_3='/var/www/ats/include'
 let g:netrw_dirhist_4='/home/lucas/OS/client'
 let g:netrw_dirhist_5='/home/lucas/webDev'
 let g:netrw_dirhist_6='/home/lucas/PL'
+let g:netrw_dirhist_7='/home/lucas/.vim/bundle/AutoClose--Alves'
+let g:netrw_dirhist_8='/home/lucas/.vim/bundle/AutoClose--Alves/.git'
+let g:netrw_dirhist_9='/home/lucas/.vim/bundle'
