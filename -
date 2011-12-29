@@ -1,0 +1,11 @@
+--2011-12-29 11:47:17--  https://raw.github.com/vgod/vimrc/master/auto-install.sh
+Resolving raw.github.com... 207.97.227.243
+Connecting to raw.github.com|207.97.227.243|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 504 [text/plain]
+Saving to: `auto-install.sh'
+
+     0K                                                       100%  222M=0s
+
+2011-12-29 11:47:19 (222 MB/s) - `auto-install.sh' saved [504/504]
+
