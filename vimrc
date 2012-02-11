@@ -1,26 +1,72 @@
-"call pthogen
-call pathogen#infect('bundle')
+"command setting{
+	"auto call the file to initialize file
+		autocmd BufNewFile * silent! 0r ~/.vim/template/template.%:e
 
-"auto call the file to initialize file
-autocmd BufNewFile * silent! 0r ~/.vim/template/template.%:e
+	"auto-indent 
+		":set noautoindent
+		:set autoindent
 
-:set autoindent
-:set bg=dark
-:syntax on
-:set nu
-:set softtabstop=4
-:set shiftwidth=4
-:set softtabstop=4
-:set tabstop=4
-:set hls
-:set ic
-:set ru
-:set cursorline
+	"always dark background
+		:set bg=dark
 
-"for easy motion
+	"set code to be colorful
+		:syntax on
+
+	"enable number beside window
+		":set nonu
+		:set nu
+
+	"set shift & tab's width to be 4{
+		:set softtabstop=4
+		:set shiftwidth=4
+		:set softtabstop=4
+		:set tabstop=4
+	"}
+
+	"high light search item
+		:set hls
+
+	"ignorecase (upper or lower case)
+		:set ic
+
+	"Always show current positions along the bottom
+		:set ru
+
+	" highlight the current column
+		:set cursorline
+
+	"set mouse enable
+		:set mouse=a
+"}
+
+
+" Hot key mapping {
+	"Toggle nerd tree
+		:noremap <F2> :NERDTreeToggle<ENTER>
+
+	"quickly shift that line UP or DOWN
+		:noremap <C-j> :m+<ENTER>
+		:noremap <C-k> :m-2<ENTER>
+
+	"Don't show pyc files
+		let NERDTreeIgnore=['\.pys$']
+"}
+
+"Folding
+
+"===========================================
+"plug-in
+"===========================================
+
+"pthogen{
+	call pathogen#infect('bundle')
+"}
+
+"Easy motion{
 	let g:EasyMotion_leader_key='\'
+"}
 
-"for NeoComplcache
+"NeoComplcache{
 	" Disable AutoComplPop.
 	let g:acp_enableAtStartup = 0
 	" Use neocomplcache.
@@ -94,3 +140,4 @@ autocmd BufNewFile * silent! 0r ~/.vim/template/template.%:e
 	let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 	let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
 	let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
+"}
