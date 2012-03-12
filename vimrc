@@ -43,6 +43,8 @@
 " Hot key mapping {
 	"Toggle nerd tree
 		:noremap <F2> :NERDTreeToggle<ENTER>
+	"Toggle Taglist
+		:noremap <F3> :TlistToggle<ENTER>
 
 	"quickly shift that line UP or DOWN
 		:noremap <C-j> :m+<ENTER>
@@ -58,6 +60,15 @@
 "plug-in
 "===========================================
 
+"ctags{
+	:set tags=./tags
+"}
+
+"Taglist{
+	let Tlist_Show_One_File=1		"不同时显示多个文件的tag，只显示当前文件的  
+	let Tlist_Exit_OnlyWindow=1		"如果taglist窗口是最后一个窗口，则退出vim  
+"}
+
 "pthogen{
 	call pathogen#infect('bundle')
 "}
@@ -70,7 +81,7 @@
 	" Disable AutoComplPop.
 	let g:acp_enableAtStartup = 0
 	" Use neocomplcache.
-	"let g:neocomplcache_enable_at_startup = 1
+	let g:neocomplcache_enable_at_startup = 1
 	" Use smartcase.
 	let g:neocomplcache_enable_smart_case = 1
 	" Use camel case completion.
@@ -115,7 +126,7 @@
 	inoremap <expr><C-e>  neocomplcache#cancel_popup()
 
 	" AutoComplPop like behavior.
-	let g:neocomplcache_enable_auto_select = 1
+	"let g:neocomplcache_enable_auto_select = 1
 
 	" Shell like behavior(not recommended).
 	"set completeopt+=longest
