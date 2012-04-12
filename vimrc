@@ -22,6 +22,11 @@
 		:set softtabstop=4
 		:set tabstop=4
 	"}
+	
+	"set folding method{
+		:set foldmethod=syntax
+		:set foldlevel=10
+	"}
 
 	"high light search item
 		:set hls
@@ -37,6 +42,25 @@
 
 	"set mouse enable
 		:set mouse=a
+
+	"set wildmenu{
+		:set wildmenu
+		:set wildmode=list:full
+	"}
+
+	"set status line{
+		:set laststatus=2
+		:set statusline=%4*%<\ %1*[%F]
+		:set statusline+=%4*\ %5*[%{&fileencoding}, " encoding
+		:set statusline+=%{&fileformat}%{\"\".((exists(\"+bomb\")\ &&\ &bomb)?\",BOM\":\"\").\"\"}]%m
+		:set statusline+=%4*%=\ %6*%y%4*\ %3*%l%4*,\ %3*%c%4*\ \<\ %2*%P%4*\ \>
+		highlight User1 term=underline cterm=underline ctermfg=red
+		highlight User2 term=underline cterm=underline ctermfg=green
+		highlight User3 term=underline cterm=underline ctermfg=yellow
+		highlight User4 term=underline cterm=underline ctermfg=white
+		highlight User5 term=underline cterm=underline ctermfg=cyan
+		highlight User6 term=underline cterm=underline ctermfg=white
+	"}
 "}
 
 
