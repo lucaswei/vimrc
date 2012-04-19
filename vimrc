@@ -27,6 +27,9 @@
 		:set foldmethod=syntax
 		:set foldlevel=10
 	"}
+	
+	"system clipboard
+		:set clipboard=unnamed
 
 	"high light search item
 		:set hls
@@ -41,7 +44,7 @@
 		:set cursorline
 
 	"set mouse enable
-		:set mouse=a
+		":set mouse=a
 
 	"set wildmenu{
 		:set wildmenu
