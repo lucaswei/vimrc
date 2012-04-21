@@ -1,6 +1,12 @@
 "command setting{
 	"auto call the file to initialize file
 		autocmd BufNewFile * silent! 0r ~/.vim/template/template.%:e
+	
+	"split windows below the current window
+		:set splitbelow
+	
+	"no compatiable
+		:set nocompatible
 
 	"auto-indent 
 		":set noautoindent
@@ -29,7 +35,7 @@
 	"}
 	
 	"system clipboard
-		:set clipboard=unnamed
+		:set clipboard+=unnamed
 
 	"high light search item
 		:set hls
@@ -49,6 +55,7 @@
 	"set wildmenu{
 		:set wildmenu
 		:set wildmode=list:full
+		:set wildignore=*.o,*.class,*.pyc
 	"}
 
 	"set status line{
@@ -64,10 +71,25 @@
 		highlight User5 term=underline cterm=underline ctermfg=cyan
 		highlight User6 term=underline cterm=underline ctermfg=white
 	"}
+
+	"filetype
+		filetype on
+		filetype plugin on
+		filetype indent on
 "}
 
+" file detect cmd{
+	" c
+		autocmd Filetype c,cpp nmap <F9> :w<CR> :make<CR>
+		autocmd Filetype c     nmap <F8> :w<CR> :!gcc -Wall -g -o %:r %<CR> :!./%:r<CR>
+		autocmd Filetype cpp   nmap <F8> :w<CR> :!g++ -Wall -g -o %:r %<CR> :!./%:r<CR>
+"}
 
 " Hot key mapping {
+	"prev & next error
+		:nmap <F5> :cn<CR>
+		:nmap <F6> :cp<CR>
+
 	"Toggle nerd tree
 		:noremap <F2> :NERDTreeToggle<ENTER>
 	"Toggle Taglist
