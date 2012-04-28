@@ -103,7 +103,7 @@
 		let NERDTreeIgnore=['\.pys$']
 	
 	"command mapping
-		command mymake make! | copen
+		command Mymake make! | copen
 "}
 
 "Folding
