@@ -101,6 +101,9 @@
 
 	"Don't show pyc files
 		let NERDTreeIgnore=['\.pys$']
+	
+	"command mapping
+		command mymake make! | copen
 "}
 
 "Folding
