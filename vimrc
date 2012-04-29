@@ -10,6 +10,7 @@
 
 	"auto-indent 
 		":set noautoindent
+		:set smartindent
 		:set autoindent
 
 	"always dark background
@@ -87,8 +88,8 @@
 
 " Hot key mapping {
 	"prev & next error
-		:nmap <F5> :cn<CR>
-		:nmap <F6> :cp<CR>
+		:nmap <F5> :cp<CR>
+		:nmap <F6> :cn<CR>
 
 	"Toggle nerd tree
 		:noremap <F2> :NERDTreeToggle<ENTER>
