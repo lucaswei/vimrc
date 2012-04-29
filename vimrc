@@ -97,8 +97,14 @@
 		:noremap <F3> :TlistToggle<ENTER>
 
 	"quickly shift that line UP or DOWN
-		:noremap <C-j> :m+<ENTER>
-		:noremap <C-k> :m-2<ENTER>
+		:inoremap <C-j> :m+<ENTER>
+		:inoremap <C-k> :m-2<ENTER>
+
+	"switch windows hot key
+		:nnoremap <C-h> <C-w>h
+		:nnoremap <C-l> <C-w>l
+		:nnoremap <C-j> <C-w>j
+		:nnoremap <C-k> <C-w>k
 
 	"Don't show pyc files
 		let NERDTreeIgnore=['\.pys$']
