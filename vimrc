@@ -97,8 +97,8 @@
 		:noremap <F3> :TlistToggle<ENTER>
 
 	"quickly shift that line UP or DOWN
-		:inoremap <C-j> :m+<ENTER>
-		:inoremap <C-k> :m-2<ENTER>
+		:inoremap <C-j> <ESC>:m+<ENTER>i
+		:imap <C-k> <ESC>:m-2<ENTER>i
 
 	"switch windows hot key
 		:nnoremap <C-h> <C-w>h
