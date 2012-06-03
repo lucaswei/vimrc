@@ -59,6 +59,12 @@
 		:set wildignore=*.o,*.class,*.pyc
 	"}
 
+	"encoding
+		set fileencodings=utf-8,big5,latin1,utf-16,utf-16le
+		set fileencoding=utf-8
+		set encoding=utf-8
+		set termencoding=utf-8
+
 	"set status line{
 		:set laststatus=2
 		:set statusline=%4*%<\ %1*[%F]
@@ -98,7 +104,7 @@
 
 	"quickly shift that line UP or DOWN
 		:inoremap <C-j> <ESC>:m+<ENTER>i
-		:imap <C-k> <ESC>:m-2<ENTER>i
+		:inoremap <C-k> <ESC>:m-2<ENTER>
 
 	"switch windows hot key
 		:nnoremap <C-h> <C-w>h
@@ -125,6 +131,7 @@
 
 	"command mapping
 		command Mymake make! | copen
+		command C let @/=""
 "}
 
 "Folding
