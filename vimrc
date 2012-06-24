@@ -16,6 +16,10 @@
 	"always dark background
 		:set bg=dark
 
+	"set undo file enable and directory
+		:set undofile
+		:set undodir=~/.vim-undofile
+
 	"set code to be colorful
 		:syntax on
 
