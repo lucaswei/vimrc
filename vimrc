@@ -3,6 +3,7 @@
 		autocmd BufNewFile * silent! 0r ~/.vim/template/template.%:e
 	
 	"split windows below the current window
+	"test
 		:set splitbelow
 	
 	"no compatiable
@@ -97,6 +98,12 @@
 "}
 
 " Hot key mapping {
+	" Hot key auto command list{
+		"script language{
+			autocmd FileType python nmap <F9> <ESC>:!python %<CR>
+			autocmd FileType php nmap <F9> <ESC>:!php %<CR>
+		"}
+	" }
 	"prev & next error
 		:nmap <F5> :cp<CR>
 		:nmap <F6> :cn<CR>
