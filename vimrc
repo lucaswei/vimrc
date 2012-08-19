@@ -100,8 +100,8 @@
 " Hot key mapping {
 	" Hot key auto command list{
 		"script language{
-			autocmd FileType python nmap <F9> <ESC>:!python %<CR>
-			autocmd FileType php nmap <F9> <ESC>:!php %<CR>
+			autocmd FileType python nmap <F9> <ESC>:w<CR>:!python %<CR>
+			autocmd FileType php nmap <F9> <ESC>:w<CR>:!php %<CR>
 		"}
 	" }
 	"prev & next error
