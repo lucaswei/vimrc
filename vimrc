@@ -110,8 +110,8 @@
 
 	"Toggle nerd tree
 		:noremap <F2> :NERDTreeToggle<ENTER>
-	"Toggle Taglist
-		:noremap <F3> :TlistToggle<ENTER>
+	"Toggle Tagbar
+		:noremap <F3> :TagbarToggle<ENTER>
 
 	"quickly shift that line UP or DOWN
 		:inoremap <C-j> <ESC>:m+<ENTER>i
@@ -153,16 +153,6 @@
 
 "ctags{
 	:set tags=./tags
-"}
-
-"Taglist{
-	"Don't shoe many file's taglist, only show one.
-	let Tlist_Show_One_File=1
-	"if taglist is the last window, then exit this tab
-	let Tlist_Exit_OnlyWindow=1
-	"show taglist on right side
-	let Tlist_Use_Right_Window=1
-	let Tlist_File_Fold_Auto_Close=1
 "}
 
 "pthogen{
