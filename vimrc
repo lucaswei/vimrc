@@ -92,21 +92,17 @@
 
 " file detect cmd{
 	" c
-		autocmd Filetype c,cpp nmap <F9> :w<CR> :make<CR>
-		autocmd Filetype c     nmap <F8> :w<CR> :!gcc -Wall -g -o %:r %<CR> :!./%:r<CR>
-		autocmd Filetype cpp   nmap <F8> :w<CR> :!g++ -Wall -g -o %:r %<CR> :!./%:r<CR>
+		autocmd Filetype c,cpp nmap <F7> :w<CR> :make<CR>
 "}
 
 " Hot key mapping {
-	" Hot key auto command list{
-		"script language{
-			autocmd FileType python nmap <F9> <ESC>:w<CR>:!python %<CR>
-			autocmd FileType php nmap <F9> <ESC>:w<CR>:!php %<CR>
-		"}
-	" }
 	"prev & next error
 		:nmap <F5> :cp<CR>
 		:nmap <F6> :cn<CR>
+    
+    "SingleCompile quick key mapping
+        nmap <F8> :SCCompile<CR>
+        nmap <F9> :SCCompileRun<CR>
 
 	"Toggle nerd tree
 		:noremap <F2> :NERDTreeToggle<ENTER>
@@ -141,7 +137,6 @@
 		nnoremap <leader>q :QFix<CR>
 
 	"command mapping
-		command Mymake make! | copen
 		command C let @/=""
 "}
 
