@@ -80,4 +80,4 @@ dependency
 screenshot
 --------------------
 
-![screenshot1](/screenshot/screenshot.png)
+![screenshot1](https://raw.github.com/lucas0412/vimrc/master/screenshot/screenshot.png)
