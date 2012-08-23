@@ -13,7 +13,7 @@ For Linux:
 Manual Install
 --------------
 
-1. Checkout from github:
+1. Clone from github:
 
     	git clone https://github.com/lucas0412/vimrc.git ~/.vim
 
@@ -29,3 +29,15 @@ Manual Install
 
 Used plugin
 -----------
+
+* [AutoClose--Alves](https://github.com/vim-scripts/AutoClose--Alves):A auto parenses completion plugin.
+* [SingleCompile](SingleCompile):This will detect your programing language and set its corresponding compiler or interpreter.
+* [colorSelector](https://github.com/c9s/colorselector.vim):A vim colorscheme picker and test tool, type `:SelectColorS` to show a colors list. Use it to select a fitness colorscheme.
+
+dependency
+--------------------
+
+* Exuberant Ctags
+
+screenshot
+--------------------
