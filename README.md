@@ -10,10 +10,10 @@ For Linux:
 
     	wget -O - https://raw.github.com/lucas0412/vimrc/master/auto-install.sh|sh
 
->>> You should have installed:
->>>     * wget
->>>     * git
->>>     * /bin/sh
+> You should have installed:
+>     * wget
+>     * git
+>     * /bin/sh
 
 Manual Install
 --------------
@@ -56,17 +56,17 @@ Command and Hotkey
 
 ###function key###
 
-* <F2>:Nerdtree
-* <F3>:TagBar
-* <F5>:cp<CR>
-* <F6>:cn<CR>
-* <F8>:SingleCompile
-* <F9>:SingleCompileRun
+* \<F2\>:Nerdtree
+* \<F3\>:TagBar
+* \<F5\>:cp<CR>
+* \<F6\>:cn<CR>
+* \<F8\>:SingleCompile
+* \<F9\>:SingleCompileRun
 
 ###leader key###
 
-* <Leader>q:q
-* <Leader>c:SelectColorS
+* \<Leader\>q:q
+* \<Leader\>c:SelectColorS
 
 ###Self defined command###
 
