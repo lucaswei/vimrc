@@ -4,14 +4,15 @@
 	
     "set color display to 256 
         set t_Co=256
-	"split windows below the current window
+
+	"split windows below or right beside the current window
 		set splitbelow
+		set splitright
 	
-	"no compatiable
+	"no compatiable to old vi
 		set nocompatible
 
 	"auto-indent 
-		"set noautoindent
 		set smartindent
 		set autoindent
 
@@ -27,12 +28,13 @@
 
 	"enable number beside window
 		"set nonu
-		set nu
+		set number
 
 	"set shift & tab's width to be 4{
 		set softtabstop=4
 		set shiftwidth=4
 		set tabstop=4
+        "set tab to space
 		set expandtab
 	"}
 	
@@ -89,6 +91,12 @@
     "color selector 
         nmap <Leader>c :SelectColorS<CR>
         nmap <Leader>q :q<CR>
+
+	"Toggle nerd tree
+		:noremap <F2> :NERDTreeToggle<ENTER>
+	"Toggle Tagbar
+		:noremap <F3> :TagbarToggle<ENTER>
+
 	"prev & next error
 		:nmap <F5> :cp<CR>
 		:nmap <F6> :cn<CR>
@@ -96,11 +104,6 @@
     "SingleCompile quick key mapping
         nmap <F8> :SCCompile<CR>
         nmap <F9> :SCCompileRun<CR>
-
-	"Toggle nerd tree
-		:noremap <F2> :NERDTreeToggle<ENTER>
-	"Toggle Tagbar
-		:noremap <F3> :TagbarToggle<ENTER>
 
 	"quickly shift that line UP or DOWN
 		:inoremap <C-j> <ESC>:m+<ENTER>i
@@ -118,8 +121,6 @@
 	"command mapping
 		command C let @/=""
 "}
-
-"Folding
 
 "===========================================
 "plug-in
