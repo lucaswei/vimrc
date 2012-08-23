@@ -25,3 +25,9 @@
 [submodule "bundle/SingleCompile"]
 	path = bundle/SingleCompile
 	url = https://github.com/xuhdev/SingleCompile.git
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "bundle/colorselector"]
+	path = bundle/colorselector
+	url = https://github.com/c9s/colorselector.vim.git

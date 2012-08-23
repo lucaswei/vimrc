@@ -2,66 +2,67 @@
 	"auto call the file to initialize file
 		autocmd BufNewFile * silent! 0r ~/.vim/template/template.%:e
 	
+    "set color display to 256 
+        set t_Co=256
 	"split windows below the current window
-	"test
-		:set splitbelow
+		set splitbelow
 	
 	"no compatiable
-		:set nocompatible
+		set nocompatible
 
 	"auto-indent 
-		":set noautoindent
-		:set smartindent
-		:set autoindent
+		"set noautoindent
+		set smartindent
+		set autoindent
 
 	"always dark background
-		:set bg=dark
+		set bg=dark
 
 	"set undo file enable and directory
-		:set undofile
-		:set undodir=~/.vim-undofile
+		set undofile
+		set undodir=~/.vim-undofile
 
 	"set code to be colorful
 		:syntax on
 
 	"enable number beside window
-		":set nonu
-		:set nu
+		"set nonu
+		set nu
 
 	"set shift & tab's width to be 4{
-		:set softtabstop=4
-		:set shiftwidth=4
-		:set tabstop=4
-		:set expandtab
+		set softtabstop=4
+		set shiftwidth=4
+		set tabstop=4
+		set expandtab
 	"}
 	
 	"set folding method{
-		:set foldmethod=syntax
-		:set foldlevel=10
+		set foldmethod=syntax
+		set foldlevel=10
 	"}
 	
 	"system clipboard
-		:set clipboard+=unnamed
+		set clipboard+=unnamed
 
 	"high light search item
-		:set hls
+		set hls
 
 	"ignorecase (upper or lower case)
-		:set ic
+		set ic
 
 	"Always show current positions along the bottom
-		:set ru
+		set ru
 
 	" highlight the current column
-		:set cursorline
+		set cursorline
 
 	"set mouse enable
-		":set mouse=a
+		"set mouse=a
 
 	"set wildmenu{
-		:set wildmenu
-		:set wildmode=list:full
-		:set wildignore=*.o,*.class,*.pyc
+		set wildmenu
+		set wildmode=list:full
+		set wildignore=*.o,*.class,*.pyc
 	"}
 
 	"encoding
@@ -70,19 +71,8 @@
 		set encoding=utf-8
 		set termencoding=utf-8
 
-	"set status line{
-		:set laststatus=2
-		:set statusline=%4*%<\ %1*[%F]
-		:set statusline+=%4*\ %5*[%{&fileencoding}, " encoding
-		:set statusline+=%{&fileformat}%{\"\".((exists(\"+bomb\")\ &&\ &bomb)?\",BOM\":\"\").\"\"}]%m
-		:set statusline+=%4*%=\ %6*%y%4*\ %3*%l%4*,\ %3*%c%4*\ \<\ %2*%P%4*\ \>
-		highlight User1 term=underline cterm=underline ctermfg=red
-		highlight User2 term=underline cterm=underline ctermfg=green
-		highlight User3 term=underline cterm=underline ctermfg=yellow
-		highlight User4 term=underline cterm=underline ctermfg=white
-		highlight User5 term=underline cterm=underline ctermfg=cyan
-		highlight User6 term=underline cterm=underline ctermfg=white
-	"}
+	"set status line
+		set laststatus=2
 
 	"filetype
 		filetype on
@@ -96,6 +86,9 @@
 "}
 
 " Hot key mapping {
+    "color selector 
+        nmap <Leader>c :SelectColorS<CR>
+        nmap <Leader>q :q<CR>
 	"prev & next error
 		:nmap <F5> :cp<CR>
 		:nmap <F6> :cn<CR>
@@ -122,20 +115,6 @@
 	"Don't show pyc files
 		let NERDTreeIgnore=['\.pys$']
 	
-	"Quick fix toggle function with 
-	"	leader>-q
-		command -bang -nargs=? QFix call QFixToggle(<bang>0)
-		function! QFixToggle(forced)
-			if exists("g:qfix_win") && a:forced == 0
-				cclose
-				unlet g:qfix_win
-			else
-				copen 10
-				let g:qfix_win = bufnr("$")
-			endif
-		endfunction
-		nnoremap <leader>q :QFix<CR>
-
 	"command mapping
 		command C let @/=""
 "}
@@ -147,7 +126,7 @@
 "===========================================
 
 "ctags{
-	:set tags=./tags
+	set tags=./tags
 "}
 
 "pthogen{
