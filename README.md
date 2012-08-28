@@ -36,7 +36,7 @@ Used plugin
 -----------
 
 * [AutoClose--Alves](https://github.com/vim-scripts/AutoClose--Alves):A auto parenses completion plugin.
-* [SingleCompile](SingleCompile):This will detect your programing language and set its corresponding compiler or interpreter.
+* [SingleCompile](SingleCompile):This plugin will detect your programing language and set its corresponding compiler or interpreter.
 * [colorSelector](https://github.com/c9s/colorselector.vim):A vim colorscheme picker and test tool, type `:SelectColorS` to show a colors list. Use it to select a fitness colorscheme.
 * [neocomplcache](https://github.com/Shougo/neocomplcache):A auto completion reference list, when you are in insert mode and type code, this will select fetched words under your cursor.
 * [nerdtree](https://github.com/scrooloose/nerdtree):File management plugin for vim. It can help browse file during using vim, and help you to `:tabe` `:sp` `:vsp` the file.
