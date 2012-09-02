@@ -97,6 +97,12 @@
 	"Toggle Tagbar
 		:noremap <F3> :TagbarToggle<ENTER>
 
+    "FuzzyFinder
+        noremap ff <esc>:FufFile<cr>
+        noremap fcd <esc>:FufDir<cr>
+        noremap fba <esc>:FufBookmarkFileAdd<cr>
+        noremap fbm <esc>:FufBookmarkFile<cr>
+
 	"prev & next error
 		:nmap <F5> :cp<CR>
 		:nmap <F6> :cn<CR>
