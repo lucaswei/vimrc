@@ -31,6 +31,3 @@
 [submodule "bundle/colorselector"]
 	path = bundle/colorselector
 	url = https://github.com/c9s/colorselector.vim.git
-[submodule "bundle/L9"]
-	path = bundle/L9
-	url = https://github.com/vim-scripts/L9.git
