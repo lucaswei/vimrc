@@ -59,12 +59,7 @@ Used plugin
 * [vim-fugitive](https://github.com/tpope/vim-fugitive):A plugin help you to use git, during using vim.
 * [vim-markdown](https://github.com/hallison/vim-markdown):Markdown syntax, snipmate,etc...
 * [vim-powerline](https://github.com/Lokaltog/vim-powerline):Beautiful status line. Have many information with status bar. And, it can change color when you change vim-mode XD.
-* [FuzzyFinder](https://github.com/vim-scripts/FuzzyFinder):Quick file fuzzy browse. You can find file with fuzzy file name. you can also edit your own bookmark with two kinds of type _dir_ or _file_
-    - :Fuffile            :open fuzzy finder console to browse file.
-    - :FufBookmarkFile    :open bookmark for file type
-    - :FufBookmarkFileAdd :Add this position to bookmark
-    - :with many function and hot key...
-* [L9](https://github.com/vim-scripts/L9):Library for FuzzyFinder.
+* [vim-indent-guides](ihttps://github.com/nathanaelkane/vim-indent-guides):Set indext tab start size and color.
 
 Command and Hotkey
 --------------------

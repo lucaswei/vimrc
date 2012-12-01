@@ -14,6 +14,7 @@
 
 	"auto-indent 
 		set smartindent
+        autocmd FileType python set nosmartindent
 		set autoindent
 
 	"always dark background
@@ -131,6 +132,14 @@
 "===========================================
 "plug-in
 "===========================================
+"vim-indent-guides{
+" open by <leader>ig
+    let g:indent_guides_auto_colors = 0
+    let g:indent_guides_start_level = 2
+    let g:indent_guides_guide_size = 1
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=235
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=238
+"}
 
 "ctags{
 	set tags=./tags
