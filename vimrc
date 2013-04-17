@@ -142,7 +142,9 @@
 "}
 
 "ctags{
-	set tags=./tags
+    let g:tagbar_sort = 0
+    let g:tagbar_autofocus = 1
+	"set tags=$HOME/.ctags
 "}
 
 "pthogen{
