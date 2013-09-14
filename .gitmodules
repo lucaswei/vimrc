@@ -34,3 +34,9 @@
 [submodule "bundle/vim-indent-guides.git"]
 	path = bundle/vim-indent-guides.git
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle/vim-css3-syntax.git"]
+	path = bundle/vim-css3-syntax.git
+	url = https://github.com/hail2u/vim-css3-syntax.git

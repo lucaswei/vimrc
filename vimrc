@@ -60,7 +60,7 @@
 		set cursorline
 
 	"set mouse enable
-		"set mouse=a
+		set mouse=a
 
 	"set wildmenu{
 		set wildmenu
@@ -81,6 +81,9 @@
 		filetype on
 		filetype plugin on
 		filetype indent on
+
+    "set vim using the same system buffer for copy/paste
+    set clipboard=unnamedplus
 "}
 
 " file detect cmd{
