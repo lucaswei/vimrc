@@ -54,7 +54,7 @@ Used plugin
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion):Useful plugin to quick cursor moving:
     1. Set a leader key.
     2. Call vim default moving key `Ex: e, w, b`
-    3. Pick up word's header charactor
+    3. Pick up word's header character
     4. Move to there!
 * [vim-fugitive](https://github.com/tpope/vim-fugitive):A plugin help you to use git, during using vim.
 * [vim-markdown](https://github.com/hallison/vim-markdown):Markdown syntax, snipmate,etc...
